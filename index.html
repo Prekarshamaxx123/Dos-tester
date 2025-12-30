@@ -5,24 +5,22 @@
   <title>DoS Tester – created by CyberTube</title>
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/glow.css">
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-<header class="neon">
+<header>
   <h1>⚡ DoS Tester</h1>
   <p>created by <span class="brand">CyberTube</span></p>
 </header>
 
-<section class="panel">
-  <div class="control">
+<section class="controls">
+  <div>
     <label>Attack Intensity</label>
     <input type="range" id="intensity" min="1" max="10" value="3">
   </div>
 
-  <div class="control">
+  <div>
     <label>Attack Mode</label>
     <select id="mode">
       <option>Single IP (DoS)</option>
@@ -32,8 +30,8 @@
     </select>
   </div>
 
-  <div class="control toggle">
-    <label>Defense Enabled</label>
+  <div class="toggle">
+    <label>Defense</label>
     <input type="checkbox" id="defense">
   </div>
 </section>
@@ -41,7 +39,7 @@
 <section class="stats">
   <div><span>Time</span><b id="time"></b></div>
   <div><span>Source IP</span><b id="ip"></b></div>
-  <div><span>Packet Count</span><b id="packets"></b></div>
+  <div><span>Packets</span><b id="packets"></b></div>
   <div><span>Packet Type</span><b id="ptype"></b></div>
   <div><span>Avg RPS</span><b id="rps"></b></div>
   <div><span>Speed</span><b id="speed"></b></div>
@@ -50,7 +48,7 @@
 
 <canvas id="trafficChart"></canvas>
 
-<h2>Live Traffic Logs</h2>
+<h2>📜 Live Traffic Logs</h2>
 <table>
   <thead>
     <tr>
@@ -67,9 +65,9 @@
 </table>
 
 <footer>
-  <p>Simulation only • Educational use • CEH aligned</p>
+  <p>⚠ Simulation only • Educational use • CEH aligned</p>
 </footer>
 
-<script type="module" src="js/app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
