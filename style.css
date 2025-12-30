@@ -15,13 +15,14 @@ header {
   color: #ff2f92;
 }
 
-.panel {
+.controls {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
-.control {
+.controls div {
   background: rgba(0,255,224,0.05);
   padding: 10px;
   border: 1px solid #00ffe0;
@@ -30,7 +31,7 @@ header {
 
 .stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
   gap: 10px;
   margin-bottom: 20px;
 }
